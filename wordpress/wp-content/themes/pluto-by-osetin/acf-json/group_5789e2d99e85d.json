@@ -1,0 +1,473 @@
+{
+    "key": "group_5789e2d99e85d",
+    "title": "Options - Columns",
+    "fields": [
+        {
+            "key": "field_546080f8c6b9d",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<h1>Select number of columns for each layout type<\/h1>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_546083f0c6b9e",
+            "label": "No Sidebar & Menu Left\/Right",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_546091610e7ad",
+            "label": "992px - 1200px",
+            "name": "wosmlr_columns_992_1200",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_546093220e7ae",
+            "label": "1200px - 1600px",
+            "name": "wosmlr_columns_1200_1600",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_546097d393c6c",
+            "label": "1600px - 1750px",
+            "name": "wosmlr_columns_1600_1750",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 4,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5460981793c6d",
+            "label": "1750px and more",
+            "name": "wosmlr_columns_1750_5000",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_546098bc6cc4c",
+            "label": "No Sidebar & Menu Top",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_546099856cc4e",
+            "label": "768px - 992px",
+            "name": "wosmt_columns_768_992",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5460995b6cc4d",
+            "label": "992px - 1200px",
+            "name": "wosmt_columns_992_1200",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54609a4c6cc4f",
+            "label": "1200px - 1300px",
+            "name": "wosmt_columns_1200_1300",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54609a756cc50",
+            "label": "1300px - 1600px",
+            "name": "wosmt_columns_1300_1600",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 4,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54609a8a6cc51",
+            "label": "1600px and more",
+            "name": "wosmt_columns_1600_5000",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54608843c6b9f",
+            "label": "With Sidebar & Menu Left\/Right",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_54609f15bc816",
+            "label": "992px - 1600px",
+            "name": "wsmlr_columns_992_1600",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54609fd3bc818",
+            "label": "1600px - 1750px",
+            "name": "wsmlr_columns_1600_1750",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5460a0f2bc819",
+            "label": "1750px and more",
+            "name": "wsmlr_columns_1750_5000",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 4,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5460a11b9b64f",
+            "label": "With Sidebar & Menu Top",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5460a16d9b650",
+            "label": "992px - 1300px",
+            "name": "wsmt_columns_992_1300",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5460a1a19b651",
+            "label": "1300px - 1600px",
+            "name": "wsmt_columns_1300_1600",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5460a1e19b652",
+            "label": "1600px - 1880px",
+            "name": "wsmt_columns_1600_1880",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 4,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5460a2069b653",
+            "label": "1880px and more",
+            "name": "wsmt_columns_1880_5000",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 5,
+            "placeholder": "",
+            "prepend": "Columns:",
+            "append": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-columns-settings"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1514171896
+}

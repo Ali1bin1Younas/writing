@@ -1,0 +1,713 @@
+{
+    "key": "group_5789e2d992e5b",
+    "title": "Options - General",
+    "fields": [
+        {
+            "key": "field_535ee30922046",
+            "label": "Navigation",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_536d4b235055c",
+            "label": "Navigation type for single post",
+            "name": "single_post_navigation_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "classic": "Classic",
+                "unique": "Unique"
+            },
+            "default_value": [
+                "unique"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53a82551dbc1c",
+            "label": "Pagination Type",
+            "name": "index_navigation_type",
+            "type": "select",
+            "instructions": "Select pagination to be used on index\/masonry\/category\/search pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "infinite": "Infinite Scroll",
+                "infinite_button": "Infinite with Button",
+                "classic": "Paginated Links",
+                "default": "Default Links"
+            },
+            "default_value": [
+                "infinite"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53a8263bdbc1d",
+            "label": "Infinite Scroll Loading Animation Color",
+            "name": "ajax_loader_image_name",
+            "type": "select",
+            "instructions": "Select a color of the gif for loading animation of the infinite scroll",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "loader-blue": "Blue",
+                "loader-light_blue": "Light Blue",
+                "loader-black": "Black",
+                "loader-grey": "Grey",
+                "loader-white": "White"
+            },
+            "default_value": [
+                "loader-blue"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53b518e10e3ee",
+            "label": "Single Post",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_53b519350e3f0",
+            "label": "Do not limit single post width",
+            "name": "no_limit_single_post_width",
+            "type": "true_false",
+            "instructions": "By default the single post width is limited for readability, you can turn off that feature",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Do not limit single post width",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53b51a0c0e3f1",
+            "label": "Single post maximum width",
+            "name": "single_post_maximum_width",
+            "type": "text",
+            "instructions": "Enter a value to be used as a maximum width of a single post (e.g. 900px)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53b519350e3f0",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "900px",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_53b51a7b57279",
+            "label": "Do not show featured image on single post page",
+            "name": "hide_featured_image_on_single_post",
+            "type": "true_false",
+            "instructions": "Allows you to remove a featured image from the top of a single post page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Do not show featured image on single post",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53bf29a5d9a63",
+            "label": "Do not show about author box under single post.",
+            "name": "disable_author_on_single",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Do not show about author box under single post.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53a40f9361430",
+            "label": "Disable social share icons on single post page",
+            "name": "disable_social_share_icons_on_post",
+            "type": "true_false",
+            "instructions": "Check this box if you want to disable social share icons on the post.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Disable social share buttons",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58193f94621ac",
+            "label": "Remove Breadcrumbs",
+            "name": "remove_breadcrumbs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Remove Breadcrumbs",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53da28c4747ac",
+            "label": "Index Posts",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_53bf14d8cc1e9",
+            "label": "Hide Following Elements from Index Posts",
+            "name": "hide_from_index_posts",
+            "type": "checkbox",
+            "instructions": "Decide which elements you want to hide from index posts by default.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "social": "Social Icons",
+                "category": "Categories",
+                "title": "Post Title",
+                "excerpt": "Post Excerpt",
+                "read_more": "Read More Button",
+                "date": "Post Date",
+                "view_count": "View Counter",
+                "author": "Author",
+                "like": "Heart",
+                "external_link_button": "External Link Button"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [
+                "view_count"
+            ],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53b9ce580e893",
+            "label": "Show featured posts on index",
+            "name": "show_featured_posts_on_index",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show featured posts on index page",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53da25eec91fa",
+            "label": "Featured Posts Slider Style",
+            "name": "featured_posts_type_on_index",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53b9ce580e893",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "compact": "Compact",
+                "full": "Full Size"
+            },
+            "default_value": [
+                "full"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53da26b98045e",
+            "label": "Hide Advert on top from index pages",
+            "name": "hide_top_ad_from_index",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide advert on top from index pages",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53b86d40fc53a",
+            "label": "Use Fixed Height Post Images on Index page",
+            "name": "use_fixed_height_index_posts",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Use fixed height post images on index",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53c3c9da13ee9",
+            "label": "Lenght (in words) of post excerpt on index",
+            "name": "index_excerpt_length",
+            "type": "number",
+            "instructions": "Default is 16",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 16,
+            "placeholder": "",
+            "prepend": "",
+            "append": "words",
+            "min": 0,
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_545de874596a5",
+            "label": "Layout Type for Categories, Search, User and other archives",
+            "name": "archive_layout_type",
+            "type": "select",
+            "instructions": "Select a layout type for Categories, Search, User and other archives",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page_masonry": "Blog Masonry",
+                "page_masonry_condensed_facebook": "Masonry Condensed Facebook Likes",
+                "page_masonry_condensed": "Masonry Condensed Hearts",
+                "page_masonry_condensed_with_author": "Masonry Condensed with Avatar",
+                "page_masonry_condensed_fixed_height": "Masonry Fixed Height",
+                "page_masonry_simple": "Masonry Simple",
+                "page_masonry_simple_facebook": "Masonry Simple Facebook"
+            },
+            "default_value": [
+                "page_masonry"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_57fdbfc410687",
+            "label": "Make posts open in lightbox",
+            "name": "make_posts_open_in_lightbox",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Make posts open in lightbox",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53a2c11ff6f46",
+            "label": "Other",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_53a2c12af6f47",
+            "label": "Protect Images From Copying",
+            "name": "protect_images_from_copying",
+            "type": "true_false",
+            "instructions": "Check this box if you want to protect images from copying by disabling a right click event on them.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Protect Images From Copying",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53a3e822f88a9",
+            "label": "Text for Image Right Click",
+            "name": "text_for_image_right_click",
+            "type": "text",
+            "instructions": "Text to show when the user tries to right click the image. Do not use quotes or html here, just plain text.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_53a40fcf61431",
+            "label": "Disable Reading Mode",
+            "name": "disable_reading_mode",
+            "type": "true_false",
+            "instructions": "Check this box if you want to disable a reading mode option.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Disable reading mode",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53a826f9dbc1e",
+            "label": "Disable Image Hover Effect",
+            "name": "disable_image_hover_effect",
+            "type": "true_false",
+            "instructions": "Disable the dark box which appears when you hover the image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Disable image hover box",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53b2f2d8bf63d",
+            "label": "Google Plus Authorship URL",
+            "name": "google_plus_authorship_url",
+            "type": "text",
+            "instructions": "Connect your google + profile by pasting your URL",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_53b68d6b7f457",
+            "label": "Enable ads on smartphones",
+            "name": "enable_ads_on_smartphones",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable ads on smartphones",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53b68dce7f458",
+            "label": "Enable ads on tablets",
+            "name": "enable_ads_on_tablets",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable ads on tablets",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53ba9d94c6e60",
+            "label": "Disable default image lightbox",
+            "name": "disable_default_image_lightbox",
+            "type": "true_false",
+            "instructions": "You can disable a default lightbox script which comes with a theme in case you want to use a third party lightbox plugin",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Disable default image lightbox",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53bf32880330c",
+            "label": "Enable commenting on \"Pages\"",
+            "name": "enable_page_comments",
+            "type": "true_false",
+            "instructions": "You can enable comments for pages by checking this box",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable comments for pages",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a443dc989e86",
+            "label": "Social Networks to Hide on Share",
+            "name": "social_networks_to_hide_on_share",
+            "type": "select",
+            "instructions": "You can hide social networks you don't want to appear on share",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "pinterest": "Pinterest",
+                "linkedin": "LinkedIn",
+                "google": "Google",
+                "email": "Email",
+                "facebook": "Facebook",
+                "vk": "Vkontakte",
+                "ok": "Odnoklassniki"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-general"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1514421945
+}

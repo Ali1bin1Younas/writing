@@ -1,0 +1,320 @@
+{
+    "key": "group_5789e2d99b415",
+    "title": "Options - Fonts",
+    "fields": [
+        {
+            "key": "field_5392eb8790cc6",
+            "label": "Font Library",
+            "name": "font_library",
+            "type": "select",
+            "instructions": "Select a library where to pick fonts from: Google Fonts ( http:\/\/www.google.com\/fonts ), Adobe Typekit ( http:\/\/www.typekit.com ), MyFonts (http:\/\/www.myfonts.com\/)",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "google_fonts": "Google Fonts",
+                "adobe_typekit_fonts": "Adobe Typekit Fonts",
+                "myfonts": "MyFonts.com"
+            },
+            "default_value": [
+                "google_fonts"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5392f167e117e",
+            "label": "Typekit Code",
+            "name": "adobe_typekit_id",
+            "type": "textarea",
+            "instructions": "Paste the typekit code here (more info: http:\/\/help.typekit.com\/customer\/portal\/articles\/6780-adding-fonts-to-your-site)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5392eb8790cc6",
+                        "operator": "==",
+                        "value": "adobe_typekit_fonts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "XXXXXXX",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5392f1bbe117f",
+            "label": "Google Fonts Link",
+            "name": "google_fonts_href",
+            "type": "textarea",
+            "instructions": "Paste the href link you receive from google fonts generator (https:\/\/www.google.com\/fonts). Default: <strong>https:\/\/fonts.googleapis.com\/css?family=Nunito:400,600,700<\/strong>",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5392eb8790cc6",
+                        "operator": "==",
+                        "value": "google_fonts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/fonts.googleapis.com\/css?family=Nunito:400,600,700",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_53bc30434af6c",
+            "label": "MyFonts Code",
+            "name": "myfonts_code",
+            "type": "textarea",
+            "instructions": "Insert a code you received from myfonts.com",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5392eb8790cc6",
+                        "operator": "==",
+                        "value": "myfonts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 10,
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5392f1e6e1180",
+            "label": "Headings Font Family",
+            "name": "headings_font_family",
+            "type": "text",
+            "instructions": "default: <strong>\"Nunito\", \"Helvetica Neue\", Helvetica, Arial, sans-serif<\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\"Nunito\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5392f203e1181",
+            "label": "Headings Font Weight",
+            "name": "headings_font_weight",
+            "type": "number",
+            "instructions": "default: <strong>700<\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 700,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 100,
+            "max": 1000,
+            "step": 100
+        },
+        {
+            "key": "field_5392f22be1182",
+            "label": "Text Font Family",
+            "name": "text_font_family",
+            "type": "text",
+            "instructions": "default: <strong>\"Nunito\", \"Helvetica Neue\", Helvetica, Arial, sans-serif<\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\"Nunito\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5392f25be1183",
+            "label": "Text Font Weight",
+            "name": "text_font_weight",
+            "type": "number",
+            "instructions": "default: <strong>400<\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 400,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 100,
+            "max": 1000,
+            "step": 100
+        },
+        {
+            "key": "field_53bd0bcff031f",
+            "label": "Menu Font Family",
+            "name": "menu_font_family",
+            "type": "text",
+            "instructions": "default: <strong>\"Nunito\", \"Helvetica Neue\", Helvetica, Arial, sans-serif<\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\"Nunito\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_53bd0c33f0320",
+            "label": "Menu Links Font Weight",
+            "name": "menu_links_font_weight",
+            "type": "text",
+            "instructions": "default: <strong>600<\/strong>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 600,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5392f288e1184",
+            "label": "Base Font Size",
+            "name": "base_font_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 14,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_53abdec59cd5f",
+            "label": "Headings Base Font Size",
+            "name": "headings_base_font_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 20,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_53abdeed9cd60",
+            "label": "Main Menu Font Size",
+            "name": "main_menu_font_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 18,
+            "placeholder": "",
+            "prepend": "",
+            "append": "px",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-fonts"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1514597910
+}

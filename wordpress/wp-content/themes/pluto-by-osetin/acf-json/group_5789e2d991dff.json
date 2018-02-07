@@ -1,0 +1,38 @@
+{
+    "title": "Gallery Format Fields",
+    "fields": [
+        {
+            "key": "field_5356e6a603b30",
+            "label": "Gallery of images",
+            "name": "gallery_of_images",
+            "type": "gallery",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "conditional_logic": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "gallery"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "key": "group_5789e2d991dff",
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1468654297
+}

@@ -1,0 +1,477 @@
+{
+    "key": "group_5789ebdb7fe1a",
+    "title": "Options - Menu\/Sidebar",
+    "fields": [
+        {
+            "key": "field_535ee28a22044",
+            "label": "Menu",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_535ee2a122045",
+            "label": "Menu Position",
+            "name": "menu_position",
+            "type": "select",
+            "instructions": "Where do you want to put a menu panel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "top": "Top",
+                "right": "Right"
+            },
+            "default_value": [
+                "left"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53c2c07366cc4",
+            "label": "Menu Style",
+            "name": "menu_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_535ee2a122045",
+                        "operator": "==",
+                        "value": "top"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "v1": "Version 1",
+                "v2": "Version 2"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53a589ea14321",
+            "label": "Hide Widgets Under Main Menu on Smaller Screens",
+            "name": "hide_widgets_under_menu",
+            "type": "true_false",
+            "instructions": "Check this box if you want to hide widgets unde the main menu on smaller screens. This is done for somebody who does not want the scroll bar to appear on the sidemenu for users who don't see widgets due to smaller height of their screen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide widgets under menu on smaller screens",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53abd965915c9",
+            "label": "Menu Search Form Position",
+            "name": "search_form_position",
+            "type": "select",
+            "instructions": "Select the position where you want to place search form in the side menu.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_535ee2a122045",
+                        "operator": "!=",
+                        "value": "top"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "above_menu": "Above the Menu",
+                "under_menu": "Under the Menu",
+                "above_social": "Above Social Icons",
+                "under_social": "Under Social Icons",
+                "no_show": "Do not show search form"
+            },
+            "default_value": [
+                "above_menu"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a4586d51ce4c",
+            "label": "Hide Social Icons From Top Bar",
+            "name": "hide_social_icons_from_top_bar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide Social Icons From Top Bar",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_578b2ff914720",
+            "label": "Hide Search box from top bar",
+            "name": "hide_search_box_from_top_bar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53c2c07366cc4",
+                        "operator": "==",
+                        "value": "v2"
+                    },
+                    {
+                        "field": "field_535ee2a122045",
+                        "operator": "==",
+                        "value": "top"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide Search box from top bar",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_578ab259ba3d7",
+            "label": "Do not Hide Search Box on Smaller Screens",
+            "name": "no_hide_search_box_on_smaller_screens",
+            "type": "true_false",
+            "instructions": "By default the search box for the top menu will be hidden on screens smaller than 1500px so that top menu has enough space and does not overlap. You can disable that option by checking this box.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_535ee2a122045",
+                        "operator": "==",
+                        "value": "top"
+                    },
+                    {
+                        "field": "field_53c2c07366cc4",
+                        "operator": "==",
+                        "value": "v2"
+                    },
+                    {
+                        "field": "field_578b2ff914720",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Do not Hide Search Box on Smaller Screens",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a455653d0ea5",
+            "label": "Hide Highlight Elements in Menu",
+            "name": "hide_highlight_elements_in_menu",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Hide Highlight Elements in Menu",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5789f58c3cf7d",
+            "label": "Sidebar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_53627f69695db",
+            "label": "Sidebar Position",
+            "name": "sidebar_position",
+            "type": "select",
+            "instructions": "Where do you want to put a sidebar panel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left",
+                "right": "Right",
+                "none": "Do Not Show"
+            },
+            "default_value": [
+                "right"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53b55cf9666fb",
+            "label": "Show sidebar on masonry page",
+            "name": "show_sidebar_on_masonry_page",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show sidebar on masonry\/index page",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53b34cf2343as",
+            "label": "Show sidebar toggler on small screens",
+            "name": "show_sidebar_on_mobile",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show sidebar toggler on small screens",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5789f6013cf7e",
+            "label": "Logo",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5396e8177d14b",
+            "label": "Logo Image",
+            "name": "logo_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "preview_size": "thumbnail",
+            "library": "all",
+            "return_format": "url",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_53a2f9d040d2a",
+            "label": "Logo Image Height",
+            "name": "logo_image_height",
+            "type": "text",
+            "instructions": "You can set a custom height for a logo image (if you leave it blank - default height of 40px will be used, it's done so that it's aligned vertically with a logo text)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_545dac390b08f",
+            "label": "Logo Image Height for Top Menu Version 2",
+            "name": "top_menu_logo_image_height",
+            "type": "text",
+            "instructions": "You can set a custom height for a logo image (if you leave it blank - default height of 40px will be used, it's done so that it's aligned vertically with a logo text)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5396e88f7d14c",
+            "label": "Logo Text",
+            "name": "logo_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "PLUTO",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_53bd09c686e61",
+            "label": "Logo Text Font Size",
+            "name": "logo_font_size",
+            "type": "text",
+            "instructions": "Font size of the logo text (e.g. 24px)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-menu-sidebar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1514505981
+}

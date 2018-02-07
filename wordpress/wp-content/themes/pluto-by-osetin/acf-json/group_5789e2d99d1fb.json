@@ -1,0 +1,212 @@
+{
+    "key": "group_5789e2d99d1fb",
+    "title": "Options - Ads",
+    "fields": [
+        {
+            "key": "field_53ce2fed5ac77",
+            "label": "Enable ads between posts",
+            "name": "enable_ads_between_posts",
+            "type": "true_false",
+            "instructions": "You can insert ads in between post boxes.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Enable ads between posts",
+            "default_value": 0
+        },
+        {
+            "key": "field_53ce31c75ac78",
+            "label": "Ad positions",
+            "name": "ad_positions",
+            "type": "text",
+            "instructions": "Input a comma separated list of positions of ads betwene posts (e.g. \"4,8,12\" will result in ads on the place of 4th 8th and 12th post boxes)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ce2fed5ac77",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_53ce3ab4133c8",
+            "label": "Ad Blocks",
+            "name": "ad_blocks",
+            "type": "repeater",
+            "instructions": "Depending on your input in a a previous field - add as many ads as you have positions in the previous field",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ce2fed5ac77",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "block",
+            "button_label": "Create Ad Block",
+            "sub_fields": [
+                {
+                    "key": "field_53ce3aec133c9",
+                    "label": "Ad Type",
+                    "name": "ad_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "image": "Image Link",
+                        "html": "HTML Code"
+                    },
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "allow_null": 0
+                },
+                {
+                    "key": "field_53ce3b5c133ca",
+                    "label": "Ad Image",
+                    "name": "ad_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_53ce3aec133c9",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "return_format": "url",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_53ce3ba1133cb",
+                    "label": "Ad Link",
+                    "name": "ad_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_53ce3aec133c9",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "formatting": "html",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_53ce3bb3133cc",
+                    "label": "Ad HTML",
+                    "name": "ad_html",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_53ce3aec133c9",
+                                "operator": "==",
+                                "value": "html"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-ads"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1468660523
+}

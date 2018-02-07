@@ -1,0 +1,41 @@
+{
+    "title": "Link Post Format",
+    "fields": [
+        {
+            "key": "field_53ccc940146a3",
+            "label": "External Link",
+            "name": "external_link",
+            "type": "text",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "conditional_logic": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "link"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "key": "group_5789e2d99209f",
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1468654297
+}

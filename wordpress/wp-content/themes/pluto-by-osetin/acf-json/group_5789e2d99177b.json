@@ -1,0 +1,41 @@
+{
+    "title": "Audio Format Fields",
+    "fields": [
+        {
+            "key": "field_53a2c865500c8",
+            "label": "Shortcode",
+            "name": "audio_shortcode",
+            "type": "textarea",
+            "instructions": "Insert a url of a song from soundcloud between [soundcloud] YOUR_URL [\/soundcloud] tags",
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "conditional_logic": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "audio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "key": "group_5789e2d99177b",
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1468654297
+}

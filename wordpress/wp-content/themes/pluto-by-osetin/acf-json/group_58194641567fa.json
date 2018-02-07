@@ -1,0 +1,121 @@
+{
+    "key": "group_58194641567fa",
+    "title": "All Posts",
+    "fields": [
+        {
+            "key": "field_5819464727a31",
+            "label": "Show External Link Button",
+            "name": "show_external_link_button",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Show External Link Button",
+            "default_value": 0
+        },
+        {
+            "key": "field_5819478927a32",
+            "label": "External Link Button URL",
+            "name": "external_link_button_url",
+            "type": "text",
+            "instructions": "URL that user will be sent when they click this button",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5819464727a31",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_581947ae27a33",
+            "label": "External Link Button Label",
+            "name": "external_link_button_label",
+            "type": "text",
+            "instructions": "Label text for the button for external link",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5819464727a31",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_581947c027a34",
+            "label": "External Link Button Price",
+            "name": "external_link_button_price",
+            "type": "text",
+            "instructions": "Optional - you can set a price which will appear on the link, useful for affiliate products for example",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5819464727a31",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1478051840
+}

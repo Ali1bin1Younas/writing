@@ -1,0 +1,5 @@
+[mode]inbox[/mode]
+[status]unread[/status]
+[timestamp]1517852761[/timestamp]
+[content]hello[/content]
+[/]

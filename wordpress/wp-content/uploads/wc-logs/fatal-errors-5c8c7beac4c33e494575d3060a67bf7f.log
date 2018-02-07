@@ -1,0 +1,12 @@
+2018-02-05T21:28:47+00:00 CRITICAL Maximum execution time of 180 seconds exceeded
+
+2018-02-07T16:13:31+00:00 CRITICAL Uncaught Error: Call to undefined function request_filesystem_credentials() in C:\xampp\htdocs\writing\wordpress\wp-admin\includes\class-wp-upgrader-skin.php:93
+Stack trace:
+#0 C:\xampp\htdocs\writing\wordpress\wp-admin\includes\class-automatic-upgrader-skin.php(47): WP_Upgrader_Skin->request_filesystem_credentials(false, 'C:\\xampp\\htdocs...', true)
+#1 C:\xampp\htdocs\writing\wordpress\wp-admin\includes\class-wp-automatic-updater.php(144): Automatic_Upgrader_Skin->request_filesystem_credentials(false, 'C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\writing\wordpress\wp-admin\includes\update.php(85): WP_Automatic_Updater->should_update('core', Object(stdClass), 'C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\writing\wordpress\wp-includes\update.php(215): find_core_auto_update()
+#4 C:\xampp\htdocs\writing\wordpress\wp-includes\class-wp-hook.php(286): wp_version_check()
+#5 C:\xampp\htdocs\writing\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\writing\wordpress\wp
+

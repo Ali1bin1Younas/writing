@@ -1,0 +1,63 @@
+
+@keyframes showPageBox {
+  0% { transform: translate3d(0, 35px, 0); opacity: 0; }
+  100% { transform: translate3d(0, 0px, 0); opacity: 1; }
+}
+
+@keyframes showLeftMenu {
+  0% { transform: translate3d(-60px, 0px, 0); opacity: 0; }
+  100% { transform: translate3d(0px, 0px, 0); opacity: 1; }
+}
+
+@keyframes showFeaturedHeading {
+  0% { transform: translate3d(0px, 80px, 0) scale(0); opacity: 0; }
+  100% { transform: translate3d(0px, 0px, 0) scale(1); opacity: 1; }
+}
+
+.pluto-page-box {
+  animation: 0.4s cubic-bezier(.25,1.1,.5,1) 0.1s showPageBox;
+  animation-fill-mode: both;
+}
+
+.menu-position-left .menu-block {
+  animation: 0.5s cubic-bezier(.25,1.1,.5,1) 0.1s showLeftMenu;
+  animation-fill-mode: both;
+}
+
+.featured-carousel-w .featured-heading {
+  animation: 0.4s cubic-bezier(.25,1.1,.5,1.2) 0.6s showFeaturedHeading;
+  animation-fill-mode: both;
+}
+
+
+
+
+@keyframes showFilter {
+  0% { transform: translate3d(60px, 0px, 0); opacity: 0; }
+  100% { transform: translate3d(0px, 0px, 0); opacity: 1; }
+}
+
+@keyframes introLoading {
+  0% {  opacity: 1; }
+  100% {  opacity: 0; visibility: hidden; display: none; }
+}
+
+.index-filter-bar {
+  animation: 0.4s cubic-bezier(.25,1.1,.5,1) 0.6s showFilter;
+  animation-fill-mode: both;
+}
+
+.all-wrapper.with-loading {
+	&:before {
+		// content: "";
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: 99999;
+		background-color: #eee;
+	  animation: 0.7s ease 0.8s introLoading;
+	  animation-fill-mode: both;
+	}
+}
